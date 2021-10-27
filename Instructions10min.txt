@@ -1,0 +1,29 @@
+Meta-Hexa Instructions:
+"The Metaverse Hexagon"
+
+Unity Version 2021.1.10f1
+C# Version 9
+
+0. In Hierarchy Main Camera background value vibrant red.
+1. In Hierarchy right-click to create 2D Object, Sprites, Circle; color and transparency optional.
+2. In Hierarchy right-click to create 2D Object, Sprites, Circle; rename "Player" and Y position to 1.0, X Y Scale to 0.25.
+3. In "Player" Inspector, Add Component, Rigidbody 2D, Body Type as Kinematic.
+4. In "Player" Inspector, Add Component, Circle Collider 2D, Is Trigger (Check).
+5. In "Player" Inspector, Add Component, New Script, name "Player" and open in Visual Studio, Copy/paste "Player" code and save.
+6. Press play to test player movement.
+7. In Hierarchy right-click to create Create Empty GameObject and rename "Hexagon".
+8. In "Hexagon" Inspector, reset transform by right-click and reset, Add Component Line Renderer.
+9. In "Hexagon" Inspector, Line Renderer, Positions, Size 6, Index-0 (X -0.5, Y 0.8), Index-1 (X -0.95, Y 0.0), Index-2 (X -0.5, Y -0.8), Index-3 (X 0.5, Y -0.8), Index-4 (X 0.95, Y 0.0), Index-5 (X 0.5, Y 0.8).
+10. In "Hexagon" Inspector, Line Renderer, Width, 0.10, Alignment as Transform Z, Texture Mode Tile, Use World Space (UnCheck). 
+11. In "Hexagon" Inspector, Add Component, Edge Collider 2D, Positions, Size, and Index same as Line Renderer.
+12. In "Hexagon" Inspector, Add Component, Rigidbody 2D, Body Type as Kinematic.
+13. In "Hexagon" Inspector, Add Component, New Script, name "Hexagon" and open in Visual Studio, Copy/paste "Hexagon" code and save.
+14. In "Hexagon" Inspector, drag and drop Rigidbody 2D component into Hexagon (Script) Rb.
+15. Press play to test Hexagon shrink once and repeats if does not collide with player.
+16. Drag and drop Hexagon from Hierarchy into Assets folder to create a Prefab, then delete new blue Hexagon from Hierarchy.
+17. In Hierarchy right-click to create Create Empty GameObject and rename "Spawner".
+18. In "Spawner" Inspector, Add Component, New Script, name "Spawner" and open in Visual Studio, Copy/paste "Spawner" code and save.
+19. From Assets folder drag and drop Hexagon Prefab into Spawner Inspector, Spawner (Script) Hexagon Prefab [None (Game Object)].
+20.  Press play to test player movement and spawning and restarting.
+21. in "Main Camera" Inspector, Add Component, New Script, name "Rotator" and open in Visual Studio, Copy/paste "Player" code and save.
+22. Press Play and Enjoy entering the hexagon metaverse!
